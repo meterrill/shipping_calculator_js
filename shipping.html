@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Shipping Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shipping Calculator</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="package-input">
+            <div class="form-group ">
+              <label for="package-length" class="control-label" for="package-length">Length:</label>
+              <input id="package-length" type="text" class="form-control" placeholder="Enter Length">
+
+              <label for="package-width" class="control-label">Width:</label>
+              <input id="package-width" type="text" class="form-control" for="package-width" placeholder="Enter Width">
+
+              <label for="package-height" class="control-label">Height:</label>
+              <input id="package-height" type="text" class="form-control" for="package-height" placeholder="Enter Height">
+
+              <label for="package-weight" class="control-label">Weight:</label>
+              <input id="package-weight" type="text" class="form-control" for="package-weight" placeholder="Enter Weight">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate!</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Cost Details:</h3>
+          <div id="package-cost">
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
